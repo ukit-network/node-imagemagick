@@ -111,7 +111,6 @@ function parseIdentify(input) {
   for (i in lines) {
     currentLine = lines[i];
     if(currentLine && typeof currentLine === 'string'){
-      inspect('currentLine: ', currentLine);
       indent = currentLine.search(/\S/);
       if (indent >= 0) {
         comps = currentLine.split(': ');
